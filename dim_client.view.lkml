@@ -31,6 +31,10 @@ view: dim_client {
   dimension: client_type {
     type: string
     sql: ${TABLE}.ClientType ;;
+    link: {
+      label: "Client Dashboard"
+      url: "https://ivedix.looker.com/dashboards/3?Client%20Type={{ value | encode_uri }}"
+    }
   }
 
   dimension: display_name {
